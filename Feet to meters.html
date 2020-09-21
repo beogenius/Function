@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    
+</head>
+<body>
+<h2>Feet to meters</h2>
+<form action="">
+    <p>
+        Feet
+        <input type="number" id="inputF" placeholder="feet" oninput="fConverter(this.value)" onchange="fConverter(this.value)">
+    </p>
+    <p>
+        Meter : <span id = "outputMeters"></span>
+    </p>
+
+
+    <br>
+    <br>
+    <h2>Meters to Feet</h2>
+    <p>
+        Meter
+        <input type="number" id="inputM" placeholder="meters" oninput="mConverter(this.value)" onchange="mConverter(this.value)">
+    </p>
+    <br>
+    <p>
+        Feet: <span id="outputFeet"></span>
+    </p>
+</form>
+
+</body>
+</html>
+<script>
+    function fConverter(f){
+        f= f;
+        document.getElementById('outputMeters').innerHTML = (f*0.305);
+    }
+
+    function mConverter(m){
+        m=m;
+        document.getElementById('outputFeet').innerHTML = (m*3.279);
+    }
+</script>
