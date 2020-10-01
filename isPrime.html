@@ -1,49 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Check Prime Number</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Is Prime Number</title>
 </head>
-<body>
-<input type="number" id="number" />
-<input type="button" value="Check Prime Number" onclick="writecheckPrimeNumber()">
-</body>
-</html>
 
+<body>
+<input type="number" id="prime" placeholder="Nhap So Can Kiem Tra">
+<button onclick = kiem_tra_snt() >Kiem Tra SNT</button>
+</body>
+
+</html>
 <script>
-    function checkPrimeNumbers(n) {
-        if (n < 2){
-            return false;
-        }
-        else if (n == 2){
-            return true;
-        }
-        else if (n % 2 == 0){
-            return false;
-        }
-        else {
-            for (var i = 3; i < Math.sqrt(n); i+=2)
-            {
-                if (n % i == 0){
-                    return false;
+    function kiem_tra_snt(n) {
+        var flag = true;
+        n=document.getElementById("prime").value;
+        if (n < 2) {
+            flag = false;
+        } else if (n == 2) {
+            flag = true;
+        } else if (n % 2 == 0) {
+            flag = false;
+        } else {
+            for (var i = 3; i < Math.sqrt(n); i += 2) {
+                if (n % i == 0) {
+                    flag = false;
                     break;
                 }
             }
         }
-        return true
-    }
-
-   function writecheckPrimeNumber(){
-        for (i=0;i<n;i++){
-            checkPrimeNumbers(i);
+        if (flag == true) {
+            document.write(n + " là số nguyên tố <br/>").innerHTML;
+        } else {
+            document.write(n + " không phải là số nguyên tố <br/>").innerHTML;
         }
-        document.write(";" + i);
-   }
-
-   let a= document.getElementById('number');
-    writecheckPrimeNumber(a);
-    document.write(a).innerHTML;
-
-
-
+    }
 </script>
