@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function sosanhAB(x,y){
+            if(x > y){
+                alert("tham số thứ nhất lớn hơn tham số thứ hai");
+                mark = 2;
+            }else{
+                return x+y;
+            }
+        }
+    </script>
+</head>
+<body>
+<script>
+    let mark = 1;
+    let a = parseInt(prompt("nhap so a"));
+    let b = parseInt(prompt("nhap so b"));
+    let k = sosanhAB(a,b);
+    if(mark == 1){
+        alert(k);
+    }
+
+
+</script>
+</body>
+</html>

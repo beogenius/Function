@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function checkStar(star){
+            for(let i = 0;i < 7;i++){
+                if(star == star1[i]){
+                    return srat2[i];
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<script>
+    let star1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let srat2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    let n = prompt('Nhap ten ngoi ');
+    let k = checkStar(n);
+    alert("Ngoi sao ban vua nhap thuoc chom  "+k);
+</script>
+</body>
+</html>
