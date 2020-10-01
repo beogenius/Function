@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function check(array,a){
+        let count = 0;
+        for(let i = 0;i < array.length;i++){
+            if (a == array[i]){
+                count++;
+            }
+        }
+        if(count != 0){
+            return count;
+        }else{
+            return -1;
+        }
+    }
+    let arraytest = ['d','f','e','f','f','d','d','e','t','h','j','k','u','r','g','f','f','f','f','t','h','h'];
+    let x = 'f';
+    alert(check(arraytest,'d'));
+
+</script>
+</body>
+</html>

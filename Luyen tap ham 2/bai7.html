@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function swap(a,b){
+        let x = a;
+        a = b;
+        b = x;
+        return [a,b];
+    }
+    let a = prompt("Nhap a");
+    let b = prompt("Nhap b");
+    let k = swap(a,b);
+    alert("a = "+k[0]);
+    alert("b = "+k[1]);
+</script>
+</body>
+</html>

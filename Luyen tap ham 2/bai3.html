@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function tinhGiaiThua(number){
+            let k = 1;
+            for(let i = 1;i <= number;i++){
+                k *= i;
+            }
+            return k;
+        }
+    </script>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("nhap so ban can tinh giai thua"));
+    let k = tinhGiaiThua(a);
+    alert("giai thua cua "+a+" la "+k);
+</script>
+</body>
+</html>
